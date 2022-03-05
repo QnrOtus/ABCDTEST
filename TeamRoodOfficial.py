@@ -309,29 +309,6 @@ async def gifspam(e, smex):
         pass
 
 
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
-####
-async def alive(e):
-    if e.sender_id in SMEX_USERS:
-        start = datetime.now()
-        rkok = "Cheaking..."
-        event = await e.reply(rkok, parse_mode=None, link_preview=None)
-        end = datetime.now()
-        ms = (end - start).microseconds / 1000
-        await event.edit(f"🤖 I Am Still alive Lomdike !!!!\n`{ms}` 𝗺𝘀\n    〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄")
-
-
-
-
 @luc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @luc2.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @luc3.on(events.NewMessage(incoming=True, pattern=r"\.join"))
