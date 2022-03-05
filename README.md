@@ -1,7 +1,7 @@
 # TESR REPO
 ## 🚀 Deploy on Heroku 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RoodOwner/TeamRoodOfficial)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/QnrOtus/ABCDTEST)
 
 ## String Session FOR  BOT AND IDS 
 
