@@ -62,7 +62,7 @@ luc10 = ""
 que = {}
 
 SMEX_USERS = [658876201, 2092103173, 5138767016]
-for x in SUDO:
+for x in SUDO_USERS:
     SMEX_USERS.append(x)
 
 
