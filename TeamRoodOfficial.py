@@ -557,8 +557,8 @@ async def _(event):
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
-         text = "Cheaking..."
-        event = await e.reply(text, parse_mode=None, link_preview=None)
+        rkoh = "Cheaking..."
+        event = await e.reply(rkoh, parse_mode=None, link_preview=None)
         end = datetime.now()
         ms = (end - start).microseconds / 1000
         await event.edit(f"🤖 I Am Still alive Lomdike !!!!\n`{ms}` 𝗺𝘀\n    〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄")
