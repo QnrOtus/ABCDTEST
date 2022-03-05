@@ -639,19 +639,19 @@ async def help(e):
 
 
 
-@Rood.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood2.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood3.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood4.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood5.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood6.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood7.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood8.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood9.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
-@Rood10.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc2.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc3.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc4.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc5.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc6.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc7.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc8.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc9.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
+@luc10.on(events.NewMessage(incoming=True, pattern=r"\.repo"))
 async def repo(e):
     if e.sender_id in SMEX_USERS:
-       text = "〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄\n┏━━━━━━━━━━━━━━━━━━━\n┣➣ Sᴜᴘᴘᴏʀᴛ : [ᒍOIᑎ](https://t.me/TeamRoodChat)\n┣➣ Cʀᴇᴀᴛᴇʀ : [ᖇOOᗪ OᗯᑎEᖇ](https://t.me/Rood_Gamer_Owner)\n┣➣ Rᴇᴩᴏ : [ᒪIᑎK](https://github.com/RoodOwner/TeamRoodOfficial)\n┗━━━━━━━━━━━━━━━━━━━"
+       text = "〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄\n┏━━━━━━━━━━━━━━━━━━━\n┣➣ Sᴜᴘᴘᴏʀᴛ : [ᒍOIᑎ](https://t.me/TeamRoodChat)\n┣➣ Cʀᴇᴀᴛᴇʀ : [ᖇOOᗪ OᗯᑎEᖇ](https://t.me/Rood_Gamer_Owner)\n┣➣ Rᴇᴩᴏ : [ᒪIᑎK](https://github.com/RoodOwner/)\n┗━━━━━━━━━━━━━━━━━━━"
        await e.reply(text, parse_mode=None, link_preview=None )
 
 
