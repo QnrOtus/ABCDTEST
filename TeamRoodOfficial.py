@@ -308,11 +308,7 @@ async def gifspam(e, smex):
     except Exception:
         pass
 
-ALIVE_PIC = "https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
-import os
-punjabi = os.environ.get("ALIVE_PIC",None)
-if not punjabi:
- punjabi ="https://telegra.ph/file/b66e8636032eb17e9c352.jpg"
+
 @luc.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @luc2.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @luc3.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
@@ -324,20 +320,14 @@ if not punjabi:
 @luc9.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 @luc10.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
 ####
-async def alive(event):
-  if event.sender_id in SMEX_USERS:
-    sed = await event.client.get_me()
-    kk = sed.first_name
-    k = sed.id
-    s = f"[{kk}](tg://user?id={k})"
-    tf = f"""
-🤖 I Am Still alive Lomdike !!!!\n`{ms}` 𝗺𝘀
-     〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄
-"""
-    await event.client.send_file(event.chat_id,punjabi,caption=tf, force_document=False, link_preview=False)
-import time
-from time import sleep
-
+async def alive(e):
+    if e.sender_id in SMEX_USERS:
+        start = datetime.now()
+        rkok = "Cheaking..."
+        event = await e.reply(rkok, parse_mode=None, link_preview=None)
+        end = datetime.now()
+        ms = (end - start).microseconds / 1000
+        await event.edit(f"🤖 I Am Still alive Lomdike !!!!\n`{ms}` 𝗺𝘀\n    〄 **╚» ⟦★𓆩ᏒⲞⲞᗪ𓆪★⟧«╝** SᑭᗩᗰᗰEᖇ ᗷOT 〄")
 
 
 
