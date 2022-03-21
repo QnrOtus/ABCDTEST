@@ -1,1 +1,2 @@
-worker: python3 TeamRoodOfficial.py
+
+worker: python3 bakispambot.py
